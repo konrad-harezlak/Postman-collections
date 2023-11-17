@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "2b959bb6-7da3-4411-9ebf-ddb1a19909fb",
+		"name": "goalsApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31156492"
+	},
+	"item": [
+		{
+			"name": "Add Goal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"due_date\": \"2023-01-01\",\r\n    \"frequency\": \"daily\",\r\n    \"progress\": 0.5,\r\n    \"reminders\": [{\"date_time\": \"2023-01-01T08:00:00\", \"message\": \"Reminder 1\"}],\r\n    \"notes\": [{\"date_time\": \"2023-01-02T12:00:00\", \"text\": \"Note 1\"}],\r\n    \"privacy\": \"private\",\r\n    \"shared_with\": [\"2\",\"3\"],\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"linked_resources\": [{\"title\": \"Resource 1\", \"url\": \"https://example.com/resource1\"}],\r\n    \"comments\": [{\"user_id\": \"2\", \"date_time\": \"2023-01-03T15:00:00\", \"text\": \"Comment 1\"}],\r\n    \"badges\": [\"badge1\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/goals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"goals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Goal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/goals/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete goal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/goals/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Goal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"due_date\": \"2023-01-01\",\r\n    \"frequency\": \"daily\",\r\n    \"progress\": 0.5,\r\n    \"reminders\": [{\"date_time\": \"2023-01-01T08:00:00\", \"message\": \"Reminder 1\"}],\r\n    \"notes\": [{\"date_time\": \"2023-01-02T12:00:00\", \"text\": \"Note 1\"}],\r\n    \"privacy\": \"private\",\r\n    \"shared_with\": [\"2\",\"3\"],\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"linked_resources\": [{\"title\": \"Resource 1\", \"url\": \"https://example.com/resource1\"}],\r\n    \"comments\": [{\"user_id\": \"2\", \"date_time\": \"2023-01-03T15:00:00\", \"text\": \"Comment 1\"}],\r\n    \"badges\": [\"badge1\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/goals/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Goal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"due_date\": \"2023-01-01\",\r\n    \"frequency\": \"daily\",\r\n    \"progress\": 0.8,\r\n    \"reminders\": [{\"date_time\": \"2023-01-01T08:00:00\", \"message\": \"Reminder 1\"}],\r\n    \"notes\": [{\"date_time\": \"2023-01-02T12:00:00\", \"text\": \"Note 1\"}],\r\n    \"privacy\": \"private\",\r\n    \"shared_with\": [\"2\",\"3\"],\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"linked_resources\": [{\"title\": \"Resource 1\", \"url\": \"https://example.com/resource1\"}],\r\n    \"comments\": [{\"user_id\": \"2\", \"date_time\": \"2023-01-03T15:00:00\", \"text\": \"Comment 1\"}],\r\n    \"badges\": [\"badge1\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/goals/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
