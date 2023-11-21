@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "x-api-key",
-						"value": "live_GqtbrAGVKGSym4NqtoCezEarKyQ0JiBar5YtwY8YFBqEPAc0GZxupn7OTMdOd7Lz",
+						"value": "{{x-api-key}}",
 						"type": "text"
 					}
 				],
@@ -41,7 +41,7 @@
 				"header": [
 					{
 						"key": "x-api-key",
-						"value": "api_key=live_GqtbrAGVKGSym4NqtoCezEarKyQ0JiBar5YtwY8YFBqEPAc0GZxupn7OTMdOd7Lz",
+						"value": "{{x-api-key-2}}",
 						"type": "text"
 					}
 				],
@@ -74,7 +74,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"value": "{{x-api-key-3}}",
 						"type": "text"
 					}
 				],
@@ -112,7 +112,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"value": "{{x-api-key-3}}",
 						"type": "text"
 					}
 				],
@@ -148,7 +148,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"value": "{{x-api-key-3}}",
 						"type": "text"
 					}
 				],
@@ -168,6 +168,12 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"_variables": "./zmienneJson.json",
+			"info": {
+			  "_postman_id": "11dbad51-9125-4138-a542-3e2a4373553b"
+			}
 		}
-	]
+	]	
 }
